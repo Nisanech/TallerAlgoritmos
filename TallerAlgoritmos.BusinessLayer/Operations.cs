@@ -95,6 +95,11 @@ namespace TallerAlgoritmos.BusinessLayer
 
     public static class Temperature
     {
+        /// <summary>
+        /// Conversión de grados Celsius a Fahrenheit
+        /// </summary>
+        /// <param name="num">Grados Celsius</param>
+        /// <returns>Grados Fahrenheit</returns>
         public static double Fahrenheit(double num)
         {
             double f = (1.8) * num + 32;
@@ -102,6 +107,11 @@ namespace TallerAlgoritmos.BusinessLayer
             return f;
         }
 
+        /// <summary>
+        /// Conversión de grados Fahrenheit a Celsius
+        /// </summary>
+        /// <param name="num">Grados Fahrenheit</param>
+        /// <returns>Grados Celsius</returns>
         public static double Celsius(double num)
         {
             double c = (num - 32) / 1.8;
