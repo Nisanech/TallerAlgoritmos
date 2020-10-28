@@ -8,7 +8,7 @@ using TallerAlgoritmos.BusinessLayer;
 
 namespace TallerAlgoritmos
 {
-    class AddProduct
+    class Program
     {
         static void Main(string[] args)
         {
@@ -19,28 +19,38 @@ namespace TallerAlgoritmos
             Console.WriteLine("Operaciones básicas\r");
             Console.WriteLine("-------------------\n");
 
-
-            Console.Write("Ingrese el primer número ");
-            num1 = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Ingrese el segundo número ");
-            num2 = Convert.ToInt32(Console.ReadLine());
-
             Console.WriteLine("Elija una opción:");
             Console.WriteLine("\ts - Sumar");
             Console.WriteLine("\tm - Multiplicar");
+            Console.WriteLine("\tc - Contador");
             Console.Write("Opción ");
 
             switch (Console.ReadLine())
             {
                 case "s":
-                    result = BusinessLayer.AddProduct.Sumar(num1, num2);
+                    Console.Write("Ingrese el primer número ");
+                    num1 = Convert.ToInt32(Console.ReadLine());
+
+                    Console.Write("Ingrese el segundo número ");
+                    num2 = Convert.ToInt32(Console.ReadLine());
+
+                    result = AddProduct.Sumar(num1, num2);
                     Console.WriteLine($"Resultado: {num1} + {num2} = " + result);
                     break;
 
                 case "m":
-                    result = BusinessLayer.AddProduct.Multiplicar(num1, num2);
+                    Console.Write("Ingrese el primer número ");
+                    num1 = Convert.ToInt32(Console.ReadLine());
+
+                    Console.Write("Ingrese el segundo número ");
+                    num2 = Convert.ToInt32(Console.ReadLine());
+
+                    result = AddProduct.Multiplicar(num1, num2);
                     Console.WriteLine($"Resultado: {num1} + {num2} = " + result);
+                    break;
+
+                case "c":
+                    result = NumberCounter.Contador(num);
                     break;
             }
 

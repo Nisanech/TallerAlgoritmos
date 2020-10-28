@@ -35,15 +35,61 @@ namespace TallerAlgoritmos.BusinessLayer
         }
     }
 
-    static public class CipherInversion
+
+    static public class NumberCounter
     {
-        public static int Invertir(int var1)
+        /// <summary>
+        /// Contador de números pares, impares, positivos y negativos
+        /// </summary>
+        /// <param name="num">Límite de números a ingresar</param>
+        /// <returns>
+        ///     Mostrará la cantidad de números positivos, negativos,
+        ///     pares e impares
+        /// </returns>
+        public static int Contador(int num)
         {
+            int cont = 5;
+            int pos = 0;
+            int neg = 0;
+            int par = 0;
+            int impar = 0;
+            int result = 0;
+            string linea;
 
+            for(int i = 0; i<cont; i++)
+            {
+                Console.Write("Ingrese los números " + i + ": ");
+                linea = Console.ReadLine();
+                num = int.Parse(linea);
+
+                if(num > 0)
+                {
+                    pos++;
+                }
+                else
+                {
+                    if (num < 0)
+                    {
+                        neg++;
+                    }
+                }
+                if(num % 2 == 0)
+                {
+                    par++;
+                }
+                else 
+                {
+                    if (num % 2 != 0)
+                    {
+                        impar++;
+                    }
+                }
+            }
+            Console.WriteLine("Números positivos: " + pos);
+            Console.WriteLine("Números negativos: " + neg);
+            Console.WriteLine("Números pares: " + par);
+            Console.WriteLine("Números impares: " + impar);
+            return result;
         }
-
-            
     }
-
-
 }
