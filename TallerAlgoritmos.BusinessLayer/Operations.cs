@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TallerAlgoritmos.BusinessLayer
 {
-    static public class Operaciones
+    static public class AddProduct
     {
         /// <summary>
         /// Suma de dos números enteros
@@ -36,7 +36,7 @@ namespace TallerAlgoritmos.BusinessLayer
     }
 
 
-    public static class ContadorNumeros
+    public static class NumberCounter
     {
         /// <summary>
         /// Contador de números pares, impares, positivos y negativos
@@ -90,6 +90,23 @@ namespace TallerAlgoritmos.BusinessLayer
             Console.WriteLine("Números pares: " + par);
             Console.WriteLine("Números impares: " + impar);
             return result;
+        }
+    }
+
+    public static class Temperature
+    {
+        public static double Fahrenheit(double num)
+        {
+            double f = (1.8) * num + 32;
+
+            return f;
+        }
+
+        public static double Celsius(double num)
+        {
+            double c = (num - 32) / 1.8;
+
+            return c;
         }
     }
 }
