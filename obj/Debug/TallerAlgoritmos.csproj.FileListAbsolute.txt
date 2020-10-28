@@ -1,0 +1,10 @@
+D:\ADSI\Fase V\.NET\TallerAlgoritmos\bin\Debug\TallerAlgoritmos.exe.config
+D:\ADSI\Fase V\.NET\TallerAlgoritmos\bin\Debug\TallerAlgoritmos.exe
+D:\ADSI\Fase V\.NET\TallerAlgoritmos\bin\Debug\TallerAlgoritmos.pdb
+D:\ADSI\Fase V\.NET\TallerAlgoritmos\obj\Debug\TallerAlgoritmos.csprojAssemblyReference.cache
+D:\ADSI\Fase V\.NET\TallerAlgoritmos\obj\Debug\TallerAlgoritmos.csproj.CoreCompileInputs.cache
+D:\ADSI\Fase V\.NET\TallerAlgoritmos\obj\Debug\TallerAlgoritmos.exe
+D:\ADSI\Fase V\.NET\TallerAlgoritmos\obj\Debug\TallerAlgoritmos.pdb
+D:\ADSI\Fase V\.NET\TallerAlgoritmos\bin\Debug\TallerAlgoritmos.BusinessLayer.dll
+D:\ADSI\Fase V\.NET\TallerAlgoritmos\bin\Debug\TallerAlgoritmos.BusinessLayer.pdb
+D:\ADSI\Fase V\.NET\TallerAlgoritmos\obj\Debug\TallerAlgoritmos.csproj.CopyComplete
