@@ -10,53 +10,55 @@ namespace TallerAlgoritmos
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            int num1 = 0; 
+            int num = 0;
+            int num1 = 0;
             int num2 = 0;
+            int resultsum = 0;
+            int resultpro = 0;
             int result = 0;
 
-            Console.WriteLine("Operaciones básicas\r");
-            Console.WriteLine("-------------------\n");
+            Console.WriteLine("Operaciones");
+            Console.WriteLine("-----------------------\n");
 
             Console.WriteLine("Elija una opción:");
-            Console.WriteLine("\ts - Sumar");
-            Console.WriteLine("\tm - Multiplicar");
-            Console.WriteLine("\tc - Contador");
+            Console.WriteLine("\tsm - Operación suma y multiplicación");
+            Console.WriteLine("\tcn - Contador de números");
+            Console.WriteLine("\tc - Conversión a Celsius");
+            Console.WriteLine("\tf - Conversión a Fahrenheit");
             Console.Write("Opción ");
 
             switch (Console.ReadLine())
             {
-                case "s":
+                case "sm":
                     Console.Write("Ingrese el primer número ");
                     num1 = Convert.ToInt32(Console.ReadLine());
 
                     Console.Write("Ingrese el segundo número ");
                     num2 = Convert.ToInt32(Console.ReadLine());
 
-                    result = AddProduct.Sumar(num1, num2);
-                    Console.WriteLine($"Resultado: {num1} + {num2} = " + result);
+                    resultsum = Operaciones.Sumar(num1, num2);
+                    resultpro = Operaciones.Multiplicar(num1, num2);
+
+                    Console.WriteLine($"Resultado: {num1} + {num2} = " + resultsum);
+                    Console.WriteLine($"Resultado: {num1} * {num2} = " + resultpro);
                     break;
 
-                case "m":
-                    Console.Write("Ingrese el primer número ");
-                    num1 = Convert.ToInt32(Console.ReadLine());
-
-                    Console.Write("Ingrese el segundo número ");
-                    num2 = Convert.ToInt32(Console.ReadLine());
-
-                    result = AddProduct.Multiplicar(num1, num2);
-                    Console.WriteLine($"Resultado: {num1} + {num2} = " + result);
+                case "cn":
+                    result = ContadorNumeros.Contador(num);
                     break;
 
                 case "c":
-                    result = NumberCounter.Contador(num);
+                    break;
+
+                case "f":
                     break;
             }
 
             Console.Write("Presione cualquier tecla para salir del programa");
             Console.ReadKey();
         }
-
+            
     }
 }

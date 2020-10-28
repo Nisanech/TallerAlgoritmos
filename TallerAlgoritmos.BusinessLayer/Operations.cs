@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TallerAlgoritmos.BusinessLayer
 {
-    static public class AddProduct
+    static public class Operaciones
     {
         /// <summary>
         /// Suma de dos números enteros
@@ -36,7 +36,7 @@ namespace TallerAlgoritmos.BusinessLayer
     }
 
 
-    static public class NumberCounter
+    public static class ContadorNumeros
     {
         /// <summary>
         /// Contador de números pares, impares, positivos y negativos
@@ -48,7 +48,7 @@ namespace TallerAlgoritmos.BusinessLayer
         /// </returns>
         public static int Contador(int num)
         {
-            int cont = 5;
+            int cont = 25;
             int pos = 0;
             int neg = 0;
             int par = 0;

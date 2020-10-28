@@ -4,3 +4,9 @@ D:\ADSI\Fase V\.NET\TallerAlgoritmos\TallerAlgoritmos.BusinessLayer\obj\Debug\Ta
 D:\ADSI\Fase V\.NET\TallerAlgoritmos\TallerAlgoritmos.BusinessLayer\obj\Debug\TallerAlgoritmos.BusinessLayer.csproj.CoreCompileInputs.cache
 D:\ADSI\Fase V\.NET\TallerAlgoritmos\TallerAlgoritmos.BusinessLayer\obj\Debug\TallerAlgoritmos.BusinessLayer.dll
 D:\ADSI\Fase V\.NET\TallerAlgoritmos\TallerAlgoritmos.BusinessLayer\obj\Debug\TallerAlgoritmos.BusinessLayer.pdb
+D:\ADSI\Fase_V\.NET\TallerAlgoritmos\TallerAlgoritmos.BusinessLayer\bin\Debug\TallerAlgoritmos.BusinessLayer.dll
+D:\ADSI\Fase_V\.NET\TallerAlgoritmos\TallerAlgoritmos.BusinessLayer\bin\Debug\TallerAlgoritmos.BusinessLayer.pdb
+D:\ADSI\Fase_V\.NET\TallerAlgoritmos\TallerAlgoritmos.BusinessLayer\obj\Debug\TallerAlgoritmos.BusinessLayer.csprojAssemblyReference.cache
+D:\ADSI\Fase_V\.NET\TallerAlgoritmos\TallerAlgoritmos.BusinessLayer\obj\Debug\TallerAlgoritmos.BusinessLayer.csproj.CoreCompileInputs.cache
+D:\ADSI\Fase_V\.NET\TallerAlgoritmos\TallerAlgoritmos.BusinessLayer\obj\Debug\TallerAlgoritmos.BusinessLayer.dll
+D:\ADSI\Fase_V\.NET\TallerAlgoritmos\TallerAlgoritmos.BusinessLayer\obj\Debug\TallerAlgoritmos.BusinessLayer.pdb
