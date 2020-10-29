@@ -21,12 +21,14 @@ namespace TallerAlgoritmos
             int result = 0;
             double grados = 0;
             double resultcon = 0;
+            int numinv = 0;
 
             Console.WriteLine("Operaciones");
             Console.WriteLine("-----------------------\n");
 
             Console.WriteLine("Elija una opción:");
             Console.WriteLine("\tsm - Operación suma y multiplicación");
+            Console.WriteLine("\ti - Invertir números");
             Console.WriteLine("\tcn - Contador de números");
             Console.WriteLine("\tf - Conversión a Fahrenheit");
             Console.WriteLine("\tc - Conversión a Celsius");
@@ -46,6 +48,15 @@ namespace TallerAlgoritmos
 
                     Console.WriteLine($"Resultado: {num1} + {num2} = " + resultsum);
                     Console.WriteLine($"Resultado: {num1} * {num2} = " + resultpro);
+                    break;
+
+                case "i":
+                    Console.WriteLine("Ingresar número ");
+                    num = int.Parse(Console.ReadLine());
+                    numinv = CipherInversion.OrdenInverso(num);
+
+                    Console.WriteLine("El número inverso de {0}, es {1}", num, numinv);
+                    Console.WriteLine();
                     break;
 
                 case "cn":

@@ -54,6 +54,7 @@ namespace TallerAlgoritmos.BusinessLayer
             int par = 0;
             int impar = 0;
             int result = 0;
+            int multiplo = 0;
             string linea;
 
             for(int i = 0; i<cont; i++)
@@ -84,11 +85,16 @@ namespace TallerAlgoritmos.BusinessLayer
                         impar++;
                     }
                 }
+                if(num % 5 == 0)
+                {
+                    multiplo++;
+                }
             }
             Console.WriteLine("Números positivos: " + pos);
             Console.WriteLine("Números negativos: " + neg);
             Console.WriteLine("Números pares: " + par);
             Console.WriteLine("Números impares: " + impar);
+            Console.WriteLine("Números multiplos de 5: " + multiplo);
             return result;
         }
     }
@@ -117,6 +123,22 @@ namespace TallerAlgoritmos.BusinessLayer
             double c = (num - 32) / 1.8;
 
             return c;
+        }
+    }
+
+    public static class CipherInversion
+    {
+        public static int OrdenInverso(int num)
+        {
+            int result = 0;
+
+            while(num > 0)
+            {
+                result = (result * 10) + num % 10;
+                num /= 10;
+            }
+
+            return result;
         }
     }
 }
